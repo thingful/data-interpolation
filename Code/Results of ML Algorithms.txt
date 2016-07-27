@@ -1,0 +1,100 @@
+### Results of prediction models
+
+#### Using trees
+
+Confusion Matrix and Statistics
+
+Reference
+Prediction 15 16 17 18 19 20 21 22 23 27 31
+15  0  0  0  0  0  0  0  0  0  0  0
+16  0  5  1  0  0  0  0  0  0  0  0
+17  0  1  2  0  0  0  1  0  0  0  0
+18  0  0  2  1  0  0  1  0  0  0  0
+19  0  0  0  1  6  3  2  0  0  0  0
+20  0  0  1  0  0  9  0  2  0  0  0
+21  0  0  0  0  0  1  2  0  0  0  0
+22  0  0  0  0  0  0  0  0  0  0  0
+23  0  0  0  0  0  0  0  0  0  0  0
+27  0  0  0  0  0  0  0  0  0  0  0
+31  0  0  0  0  0  0  0  0  0  0  0
+
+Overall Statistics
+
+Accuracy : 0.6098
+95% CI : (0.445, 0.758)
+No Information Rate : 0.3171
+P-Value [Acc > NIR] : 0.0001077
+
+Kappa : 0.5201
+Mcnemar's Test P-Value : NA
+
+Statistics by Class:
+
+Class: 15 Class: 16 Class: 17 Class: 18 Class: 19 Class: 20
+Sensitivity                 NA    0.8333   0.33333   0.50000    1.0000    0.6923
+Specificity                  1    0.9714   0.94286   0.92308    0.8286    0.8929
+Pos Pred Value              NA    0.8333   0.50000   0.25000    0.5000    0.7500
+Neg Pred Value              NA    0.9714   0.89189   0.97297    1.0000    0.8621
+Prevalence                   0    0.1463   0.14634   0.04878    0.1463    0.3171
+Detection Rate               0    0.1220   0.04878   0.02439    0.1463    0.2195
+Detection Prevalence         0    0.1463   0.09756   0.09756    0.2927    0.2927
+Balanced Accuracy           NA    0.9024   0.63810   0.71154    0.9143    0.7926
+Class: 21 Class: 22 Class: 23 Class: 27 Class: 31
+Sensitivity            0.33333   0.00000        NA        NA        NA
+Specificity            0.97143   1.00000         1         1         1
+Pos Pred Value         0.66667       NaN        NA        NA        NA
+Neg Pred Value         0.89474   0.95122        NA        NA        NA
+Prevalence             0.14634   0.04878         0         0         0
+Detection Rate         0.04878   0.00000         0         0         0
+Detection Prevalence   0.07317   0.00000         0         0         0
+Balanced Accuracy      0.65238   0.50000        NA        NA        NA
+
+
+#### Using Random Forests
+
+Confusion Matrix and Statistics
+
+Reference
+Prediction 15 16 17 18 19 20 21 22 23 27 31
+15  0  0  0  0  0  0  0  0  0  0  0
+16  0  3  0  0  0  0  0  1  0  0  0
+17  0  2  6  1  0  2  1  0  0  0  0
+18  0  0  0  0  0  0  0  0  0  0  0
+19  0  0  0  1  6  0  1  0  0  0  0
+20  0  1  0  0  0 11  0  0  0  0  0
+21  0  0  0  0  0  0  3  1  0  0  0
+22  0  0  0  0  0  0  1  0  0  0  0
+23  0  0  0  0  0  0  0  0  0  0  0
+27  0  0  0  0  0  0  0  0  0  0  0
+31  0  0  0  0  0  0  0  0  0  0  0
+
+Overall Statistics
+
+Accuracy : 0.7073
+95% CI : (0.5446, 0.8387)
+No Information Rate : 0.3171
+P-Value [Acc > NIR] : 3.392e-07
+
+Kappa : 0.6369
+Mcnemar's Test P-Value : NA
+
+Statistics by Class:
+
+Class: 15 Class: 16 Class: 17 Class: 18 Class: 19 Class: 20
+Sensitivity                 NA   0.50000    1.0000   0.00000    1.0000    0.8462
+Specificity                  1   0.97143    0.8286   1.00000    0.9429    0.9643
+Pos Pred Value              NA   0.75000    0.5000       NaN    0.7500    0.9167
+Neg Pred Value              NA   0.91892    1.0000   0.95122    1.0000    0.9310
+Prevalence                   0   0.14634    0.1463   0.04878    0.1463    0.3171
+Detection Rate               0   0.07317    0.1463   0.00000    0.1463    0.2683
+Detection Prevalence         0   0.09756    0.2927   0.00000    0.1951    0.2927
+Balanced Accuracy           NA   0.73571    0.9143   0.50000    0.9714    0.9052
+Class: 21 Class: 22 Class: 23 Class: 27 Class: 31
+Sensitivity            0.50000   0.00000        NA        NA        NA
+Specificity            0.97143   0.97436         1         1         1
+Pos Pred Value         0.75000   0.00000        NA        NA        NA
+Neg Pred Value         0.91892   0.95000        NA        NA        NA
+Prevalence             0.14634   0.04878         0         0         0
+Detection Rate         0.07317   0.00000         0         0         0
+Detection Prevalence   0.09756   0.02439         0         0         0
+Balanced Accuracy      0.73571   0.48718        NA        NA        NA
